@@ -31,16 +31,12 @@
             <h2>Bienvenue sur Secretbio</h2>
         </section>
 
-        <p><h2>Transformez votre routine en véritable soin de luxe bio !!!</h2> </p> 
+        <p><h2>Nos Produits</h2> </p> 
         <section class="products">
-    <div class="carousel">
-        <button class="nav-button prev">◀</button>
-        
-        <div class="product-container">
             <div class="product">
                 <img src="D:\secretbio\Fichier\huile avocat.png" alt="Huile de Beauté">
                 <div class="product-info">
-                    <h3 class="product-title">Huile de Beauté</h3>
+                    <h3 class="product-title">Huile de Beauté </h3>
                 </div>
             </div>
 
@@ -48,6 +44,7 @@
                 <img src="D:\secretbio\Fichier\Creme anti age.png" alt="Crème Anti-Âge">
                 <div class="product-info">
                     <h3 class="product-title">Crème Anti-Âge</h3>
+                    
                 </div>
             </div>
 
@@ -55,6 +52,7 @@
                 <img src="D:\secretbio\Fichier\serum ec.png" alt="Sérum Éclaircissant">
                 <div class="product-info">
                     <h3 class="product-title">Sérum Éclaircissant</h3>
+                   
                 </div>
             </div>
 
@@ -62,6 +60,7 @@
                 <img src="D:\secretbio\Fichier\img (9).jpg" alt="Masque de Nuit">
                 <div class="product-info">
                     <h3 class="product-title">Masque de Nuit</h3>
+                    
                 </div>
             </div>
 
@@ -69,6 +68,7 @@
                 <img src="D:\secretbio\Fichier\vente (5).jpg" alt="Gommage au Café">
                 <div class="product-info">
                     <h3 class="product-title">Gommage au Café</h3>
+                  
                 </div>
             </div>
 
@@ -76,6 +76,7 @@
                 <img src="D:\secretbio\Fichier\img (7).jpg" alt="Huile de Jojoba">
                 <div class="product-info">
                     <h3 class="product-title">Huile de Jojoba</h3>
+                    
                 </div>
             </div>
 
@@ -83,15 +84,48 @@
                 <img src="D:\secretbio\Fichier\vente (3).jpg" alt="Crème Hydratante">
                 <div class="product-info">
                     <h3 class="product-title">Crème Hydratante</h3>
+                   
                 </div>
             </div>
 
-        </div>
+            <div class="product">
+                <img src="D:\secretbio\Fichier\vente (1).jpg" alt="Sérum pour Cheveux">
+                <div class="product-info">
+                    <h3 class="product-title">Sérum pour Cheveux</h3>
+                </div>
+            </div>
 
-        <button class="nav-button next">▶</button>
-    </div>
-</section>
+            <div class="product">
+                <img src="D:\secretbio\Fichier\img (5).jpg" alt="Masque Purifiant">
+                <div class="product-info">
+                    <h3 class="product-title">Masque Purifiant</h3>
+                   
+                </div>
+            </div>
 
+            <div class="product">
+                <img src="D:\secretbio\Fichier\img (4).jpg" alt="Gommage au Sucre">
+                <div class="product-info">
+                    <h3 class="product-title">Gommage au Sucre</h3>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="D:\secretbio\Fichier\vente (2).jpg" alt="Huile de Coco">
+                <div class="product-info">
+                    <h3 class="product-title">Huile de Coco</h3>
+                   
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="D:\secretbio\Fichier\vente (2).png" alt="Crème de Jour">
+                <div class="product-info">
+                    <h3 class="product-title">Pack du</h3>
+                   
+                </div>
+            </div>
+        </section>
 
         <section class="advertisements">
             <h2>Offres Spéciales</h2>
@@ -133,28 +167,5 @@
             });
         });
     </script>
-
-    <script>
-    let currentIndex = 0;
-    const products = document.querySelectorAll('.product');
-    const totalProducts = products.length;
-    const visibleCount = 6; // Nombre de produits visibles
-
-    document.querySelector('.next').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % Math.ceil(totalProducts / visibleCount);
-        updateCarousel();
-    });
-
-    document.querySelector('.prev').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + Math.ceil(totalProducts / visibleCount)) % Math.ceil(totalProducts / visibleCount);
-        updateCarousel();
-    });
-
-    function updateCarousel() {
-        const offset = -currentIndex * (100 / visibleCount);
-        document.querySelector('.product-container').style.transform = `translateX(${offset}%)`;
-    }
-</script>
-
 </body>
 </html>

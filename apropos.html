@@ -31,67 +31,17 @@
             <h2>Bienvenue sur Secretbio</h2>
         </section>
 
-        <p><h2>Transformez votre routine en véritable soin de luxe bio !!!</h2> </p> 
-        <section class="products">
-    <div class="carousel">
-        <button class="nav-button prev">◀</button>
-        
-        <div class="product-container">
-            <div class="product">
-                <img src="D:\secretbio\Fichier\huile avocat.png" alt="Huile de Beauté">
-                <div class="product-info">
-                    <h3 class="product-title">Huile de Beauté</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\Creme anti age.png" alt="Crème Anti-Âge">
-                <div class="product-info">
-                    <h3 class="product-title">Crème Anti-Âge</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\serum ec.png" alt="Sérum Éclaircissant">
-                <div class="product-info">
-                    <h3 class="product-title">Sérum Éclaircissant</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\img (9).jpg" alt="Masque de Nuit">
-                <div class="product-info">
-                    <h3 class="product-title">Masque de Nuit</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\vente (5).jpg" alt="Gommage au Café">
-                <div class="product-info">
-                    <h3 class="product-title">Gommage au Café</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\img (7).jpg" alt="Huile de Jojoba">
-                <div class="product-info">
-                    <h3 class="product-title">Huile de Jojoba</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\vente (3).jpg" alt="Crème Hydratante">
-                <div class="product-info">
-                    <h3 class="product-title">Crème Hydratante</h3>
-                </div>
-            </div>
-
-        </div>
-
-        <button class="nav-button next">▶</button>
-    </div>
-</section>
-
+        <p><h2>Ce que vous devez savoir sur la société SECRETBIO</h2> </p> 
+        <!-- Présentation de SecretBio -->
+        <section class="about-company">
+          <h2>À propos de SecretBio</h2>
+          <p class="company-description">
+            Fondée en 2022, <strong>SecretBio</strong> est une société spécialisée dans la commercialisation de produits de beauté naturels. Située à Kinshasa, en République Démocratique du Congo, notre société met à disposition une gamme variée de produits conçus pour révéler et valoriser la beauté authentique de chaque individu.
+          </p>
+          <p class="company-details">
+            Avec plusieurs années d'expérience sur le marché, SecretBio s’engage à offrir des produits de haute qualité, respectueux de l’environnement et adaptés aux besoins de toute la famille. Nous proposons également une large gamme de produits pour l’entretien de la maison, alliant efficacité et naturel. Notre objectif est de contribuer à votre bien-être quotidien, tout en respectant nos valeurs d’authenticité et de durabilité. N'hésitez pas à nous contacter pour découvrir nos produits et bénéficier de nos conseils personnalisés.
+          </p>
+        </section>
 
         <section class="advertisements">
             <h2>Offres Spéciales</h2>
@@ -133,28 +83,5 @@
             });
         });
     </script>
-
-    <script>
-    let currentIndex = 0;
-    const products = document.querySelectorAll('.product');
-    const totalProducts = products.length;
-    const visibleCount = 6; // Nombre de produits visibles
-
-    document.querySelector('.next').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % Math.ceil(totalProducts / visibleCount);
-        updateCarousel();
-    });
-
-    document.querySelector('.prev').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + Math.ceil(totalProducts / visibleCount)) % Math.ceil(totalProducts / visibleCount);
-        updateCarousel();
-    });
-
-    function updateCarousel() {
-        const offset = -currentIndex * (100 / visibleCount);
-        document.querySelector('.product-container').style.transform = `translateX(${offset}%)`;
-    }
-</script>
-
 </body>
 </html>

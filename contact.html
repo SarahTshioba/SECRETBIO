@@ -27,68 +27,49 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Bienvenue sur Secretbio</h2>
-        </section>
-
-        <p><h2>Transformez votre routine en véritable soin de luxe bio !!!</h2> </p> 
-        <section class="products">
-    <div class="carousel">
-        <button class="nav-button prev">◀</button>
-        
-        <div class="product-container">
-            <div class="product">
-                <img src="D:\secretbio\Fichier\huile avocat.png" alt="Huile de Beauté">
-                <div class="product-info">
-                    <h3 class="product-title">Huile de Beauté</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\Creme anti age.png" alt="Crème Anti-Âge">
-                <div class="product-info">
-                    <h3 class="product-title">Crème Anti-Âge</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\serum ec.png" alt="Sérum Éclaircissant">
-                <div class="product-info">
-                    <h3 class="product-title">Sérum Éclaircissant</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\img (9).jpg" alt="Masque de Nuit">
-                <div class="product-info">
-                    <h3 class="product-title">Masque de Nuit</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\vente (5).jpg" alt="Gommage au Café">
-                <div class="product-info">
-                    <h3 class="product-title">Gommage au Café</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\img (7).jpg" alt="Huile de Jojoba">
-                <div class="product-info">
-                    <h3 class="product-title">Huile de Jojoba</h3>
-                </div>
-            </div>
-
-            <div class="product">
-                <img src="D:\secretbio\Fichier\vente (3).jpg" alt="Crème Hydratante">
-                <div class="product-info">
-                    <h3 class="product-title">Crème Hydratante</h3>
-                </div>
-            </div>
-
+        <section class="contact">
+    <h2>Contactez-nous</h2>
+    <div class="contact-levels">
+        <div class="online">
+            <h3>En ligne</h3>
+            <ul>
+                <li>
+                    <a href="mailto:contact@secretbio.com">contact@secretbio.com</a>
+                    <p>Envoyez-nous un message pour toute question ou commande !</p>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/secretbio">Facebook</a>
+                    <p>Rejoignez-nous sur Facebook pour découvrir nos dernières nouveautés !</p>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/secretbio">Instagram</a>
+                    <p>Suivez-nous sur Instagram pour une dose quotidienne d'inspiration beauté !</p>
+                </li>
+            </ul>
         </div>
-
-        <button class="nav-button next">▶</button>
+        <div class="mobile">
+            <h3>Mobile</h3>
+            <ul>
+                <li>
+                    <a href="tel:+243 859 484 381">+243 859 484 381</a>
+                    <p>Appelez-nous pour passer votre commande ou obtenir des conseils personnalisés !</p>
+                </li>
+                <li>
+                    <a href="https://wa.me/+243 859 484 381">WhatsApp</a>
+                    <p>Envoyez-nous un message WhatsApp pour une réponse rapide à vos questions !</p>
+                </li>
+            </ul>
+        </div>
+        <div class="physical">
+            <h3>Physique</h3>
+            <ul>
+                <li>
+                    <p>Secretbio Boutique</p>
+                    <p>145 Rue des KABINDA, Barumbu-Kinshasa, RD Congo</p>
+                    <p>Venez nous rendre visite pour découvrir nos produits en personne !</p>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>
 
@@ -133,28 +114,5 @@
             });
         });
     </script>
-
-    <script>
-    let currentIndex = 0;
-    const products = document.querySelectorAll('.product');
-    const totalProducts = products.length;
-    const visibleCount = 6; // Nombre de produits visibles
-
-    document.querySelector('.next').addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % Math.ceil(totalProducts / visibleCount);
-        updateCarousel();
-    });
-
-    document.querySelector('.prev').addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + Math.ceil(totalProducts / visibleCount)) % Math.ceil(totalProducts / visibleCount);
-        updateCarousel();
-    });
-
-    function updateCarousel() {
-        const offset = -currentIndex * (100 / visibleCount);
-        document.querySelector('.product-container').style.transform = `translateX(${offset}%)`;
-    }
-</script>
-
 </body>
 </html>
