@@ -1,4 +1,4 @@
-# README - Site Web : Recette de Beauté Naturelle
+# README - Site Web : Recette de Beauté Naturelle (SECRETBIO)
 
 ## Introduction
 Le projet **Recette de Beauté Naturelle** est un site vitrine conçu pour partager des recettes naturelles de beauté, incluant des masques, des gommages et des huiles. Ce site vise à offrir un espace simple et attrayant pour découvrir des astuces de beauté faites maison.
